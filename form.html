@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Հետադարձ կապ ֊ Իջևան</title>
+</head>
+<body>
+
+    <main class="form-container">
+        <nav style="margin-bottom: 20px;">
+            <a href="/index.html">&larr; Վերադառնալ գլխավոր էջ</a>
+        </nav>
+
+        <div class="form-header">
+            <p>Խնդրում ենք լրացնել այս ձևաթուղթը՝ Իջևանի մասին ձեր կարծիքը կիսելու համար:</p>
+        </div>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Անուն</label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Արամ">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Ազգանուն</label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Ազատյան">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Էլ․ փոստ</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Հեռախոս</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+374 94 123 456" maxlength="15">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="age">Տարիք</label>
+                    <select id="age" name="age">
+                        <option value="" disabled selected>Ընտրեք տարիքը</option>
+                        <option value="under18">Մինչև 18</option>
+                        <option value="18-30">18 - 30</option>
+                        <option value="31-50">31 - 50</option>
+                        <option value="51+">51 և ավելի</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <!-- use a label tag here purely to inherit consistent typography and spacing from form labels -->
+                    <label>Սեռ</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male">Արական</label>
+                        <label><input type="radio" name="gender" value="female">Իգական</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 15px;">
+                <!-- use a label tag here purely to inherit consistent typography and spacing from form labels -->
+                <label>Սիրված վայրեր (Նշեք մի քանիսը)</label>
+                <div class="checkbox-wrapper">
+                    <label><input type="checkbox" name="places" value="place 1">place 1</label>
+                    <label><input type="checkbox" name="places" value="place 2">place 2</label>
+                    <label><input type="checkbox" name="places" value="place 3">place 3</label>
+                    <label><input type="checkbox" name="places" value="place 4">place 4</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="visitDate">Այցելության ամսաթիվ</label>
+                    <input type="date" id="visitDate" name="visitDate">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Գնահատեք քաղաքը (1-10)</label>
+                    <div class="range-container">
+                        <span>1</span>
+                        <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5">
+                        <span>10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="photo">Ավելացնել նկար</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="feedback">Կարծիք կամ առաջարկ</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Կիսվեք տպավորություններով..."></textarea>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" class="btn btn-submit">Ուղարկել</button>
+                <button type="reset" class="btn btn-reset">Մաքրել</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
